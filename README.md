@@ -86,7 +86,8 @@ Response fields:
 - `response` – the natural language answer you can show directly.
 - `items` – array of structured cards with:
   - `name`
-  - `serving` → location, meal period, and hours
+- `serving` → location, meal period, and hours
+- `serving.crowdedness` → estimated wait level (`Low/Medium/High` + score)
   - `dietary` → choices/tags (e.g., vegan, halal)
   - `nutrition` → key macros
   - `blurb` → short item description

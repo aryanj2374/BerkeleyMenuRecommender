@@ -80,6 +80,8 @@ def _format_item_for_api(item: Dict[str, Any]) -> RecommendationItem:
         "meal": item.get("meal"),
         "hours": item.get("hours") or [],
         "hours_structured": item.get("hours_structured") or [],
+        "status": item.get("status"),
+        "crowdedness": item.get("crowdedness"),
     }
     dietary = {
         "choices": item.get("dietary_choices") or [],
